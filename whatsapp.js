@@ -13,7 +13,7 @@ export const sendTextMessage = async ({ data }) => {
     });
 
 
-    await axios.post("https://graph.facebook.com/v22.0/652213287977803/messages", {
+    await axios.post("https://graph.facebook.com/v22.0/727792423740049/messages", {
         messaging_product: "whatsapp",
         recipient_type: "individual",
         to: "919667067062",
@@ -35,7 +35,7 @@ export const sendTextMessage = async ({ data }) => {
 
 
 export const sendTypingIndicator = async (messageID) => {
-    await axios.post("https://graph.facebook.com/v22.0/652213287977803/messages", {
+    await axios.post("https://graph.facebook.com/v22.0/727792423740049/messages", {
         messaging_product: "whatsapp",
         status: "read",
         message_id: messageID,
